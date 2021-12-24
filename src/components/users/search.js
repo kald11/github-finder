@@ -5,9 +5,9 @@ export class search extends Component {
   state = {
     text: "",
   };
-  static propTypes={
-    searchUsers:PropTypes.func.isRequired;
-  }
+  static propTypes = {
+    searchUsers: PropTypes.func.isRequired,
+  };
   onChange = (e) => this.setState({ [e.target.name]: e.target.value });
   onSubmit = (e) => {
     e.preventDefault();
